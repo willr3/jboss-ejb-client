@@ -50,7 +50,7 @@ public abstract class SessionID implements Serializable {
     SessionID(final byte[] encodedForm) {
         this.encodedForm = encodedForm;
         hashCode = Arrays.hashCode(encodedForm);
-	toString = "{" + Arrays.toString(encodedForm) + '}';
+        toString = "{" + Arrays.toString(encodedForm) + '}';
     }
 
     /**
@@ -144,6 +144,6 @@ public abstract class SessionID implements Serializable {
 
     @Override
     public String toString() {
-        return toString; 
+        return toString;
     }
 }
